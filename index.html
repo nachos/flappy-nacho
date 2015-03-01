@@ -1,0 +1,45 @@
+<!doctype html>
+<html ng-app="flappyNacho">
+<head>
+  <title>Flappy Nacho</title>
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" href="bower_components/mdi/css/materialdesignicons.css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <link href="css/app.css" rel="stylesheet" type="text/css">
+</head>
+<body layout="column" ng-controller="AppCtrl">
+  <div class="titlebar" layout="row" layout-align="space-between center" md-theme="light-blue">
+    <div flex class="content">
+    </div>
+    <div layout="row" layout-align="space-between end">
+      <md-button md-no-ink flex ng-click="hide()">
+        <i class="mdi mdi-minus"></i>
+      </md-button>
+      <md-button flex ng-click="close()">
+        <i class="mdi mdi-close"></i>
+      </md-button>
+    </div>
+  </div>
+  <div flex layout="column" layout-align="center center">
+    <div id="flappy-nacho"></div>
+  </div>
+  <script src="bower_components/phaser/build/phaser.js"></script>
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="game/prefabs/bird.js"></script>
+  <script src="game/prefabs/ground.js"></script>
+  <script src="game/prefabs/pipe.js"></script>
+  <script src="game/prefabs/pipeGroup.js"></script>
+  <script src="game/prefabs/scoreboard.js"></script>
+  <script src="game/prefabs/sensor.js"></script>
+  <script src="game/states/boot.js"></script>
+  <script src="game/states/menu.js"></script>
+  <script src="game/states/play.js"></script>
+  <script src="game/states/preload.js"></script>
+  <script src="game/states/gameover.js"></script>
+  <script src="game/main.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

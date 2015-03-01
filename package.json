@@ -1,0 +1,16 @@
+{
+  "name": "flappy-nacho",
+  "description": "",
+  "version": "0.0.1",
+  "main": "index.html",
+  "window": {
+    "toolbar": false,
+    "transparent": true,
+    "width": 288,
+    "height": 537,
+    "frame": false,
+    "position": "center",
+    "fullscreen": false,
+    "resizable": false
+  }
+}
